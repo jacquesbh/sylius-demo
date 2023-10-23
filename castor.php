@@ -28,7 +28,8 @@ function reset(): void
 
 #[AsTask(namespace: 'local', description: 'Init project')]
 function setup(
-    #[AsOption(description: 'Version of PHP', suggestedValues: [DEFAULT_PHP_VERSION])] ?string $php = null
+    #[AsOption(description: 'Version of PHP', suggestedValues: [DEFAULT_PHP_VERSION])] ?string $php = null,
+    #[AsOption(description: 'Force the Sylius version')] ?string $sylius = null,
 ): void {
     # PHP Version
     $phpVersion = $php ?? io()->ask('Which PHP do you want?', DEFAULT_PHP_VERSION);
@@ -41,7 +42,8 @@ function setup(
     }
 
     # sylius
-    run('symfony composer create-project --no-scripts sylius/sylius-standard apps/sylius', timeout: false);
+    $syliusVersion = 'sylius/sylius-standard' . ($sylius ? '=^' . $sylius : '');
+    run('symfony composer create-project --no-scripts ' . $syliusVersion . ' apps/sylius', timeout: false);
     file_put_contents('apps/sylius/.env.dev', 'MAILER_DSN=smtp://localhost:1025');
     file_put_contents('apps/sylius/.php-version', $phpVersion);
 
