@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "app_id": "app_5d410d20-0e34-45b6-9a98-e724e4c161c6",
+      "org_id": "user_d658f30b-96a8-45b3-bcfd-720f246516e7",
+      "deploy_url": "https://push-n3-par-clevercloud-customers.services.clever-cloud.com/app_5d410d20-0e34-45b6-9a98-e724e4c161c6.git",
+      "name": "demo-staging",
+      "alias": "staging"
+    }
+  ]
+}
