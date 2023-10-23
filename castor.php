@@ -3,6 +3,7 @@
 namespace MonsieurBiz\SyliusSetup\Castor;
 
 use Castor\Attribute\AsTask;
+use Castor\Attribute\AsOption;
 use Castor\GlobalHelper;
 use Symfony\Component\Console\Question\Question;
 
@@ -12,6 +13,8 @@ use function Castor\io;
 use function Castor\run;
 
 const DEFAULT_TIMEOUT_COMPOSER_PROCESS = 120;
+
+const DEFAULT_PHP_VERSION = '8.2';
 
 #[AsTask(namespace: 'local', description: 'Reset local project. Be careful!')]
 function reset(): void
@@ -24,10 +27,11 @@ function reset(): void
 }
 
 #[AsTask(namespace: 'local', description: 'Init project')]
-function setup(): void
-{
+function setup(
+    #[AsOption(description: 'Version of PHP', suggestedValues: [DEFAULT_PHP_VERSION])] ?string $php = null
+): void {
     # PHP Version
-    $phpVersion = io()->ask('Which PHP do you want?', '8.2');
+    $phpVersion = $php ?? io()->ask('Which PHP do you want?', DEFAULT_PHP_VERSION);
     file_put_contents('.php-version', $phpVersion);
 
     # .gitignore
