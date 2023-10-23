@@ -38,6 +38,10 @@ jobs:
                 run: |
                     echo "${{ matrix.php }}" > .php-version
 
+            -   uses: actions/setup-node@v3
+                with:
+                    node-version: 14
+
             -   name: Install WKHTMLTOPDF
                 run: |
                     wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
