@@ -1,9 +1,9 @@
 <?php
 
 /*
- * This file is part of the Sylius package.
+ * This file is part of a proprietary project.
  *
- * (c) Paweł Jędrzejewski
+ * (c) Monsieur Biz <sylius@monsieurbiz.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -28,17 +28,17 @@ final class Kernel extends BaseKernel
 
     public function getCacheDir(): string
     {
-        return $this->getProjectDir().'/var/cache/'.$this->environment;
+        return $this->getProjectDir() . '/var/cache/' . $this->environment;
     }
 
     public function getLogDir(): string
     {
-        return $this->getProjectDir().'/var/log';
+        return $this->getProjectDir() . '/var/log';
     }
 
     public function registerBundles(): iterable
     {
-        $contents = require $this->getProjectDir().'/config/bundles.php';
+        $contents = require $this->getProjectDir() . '/config/bundles.php';
         foreach ($contents as $class => $envs) {
             if (isset($envs['all']) || isset($envs[$this->environment])) {
                 yield new $class();
@@ -48,14 +48,14 @@ final class Kernel extends BaseKernel
 
     protected function configureContainer(ContainerBuilder $container, LoaderInterface $loader): void
     {
-        $container->addResource(new FileResource($this->getProjectDir().'/config/bundles.php'));
+        $container->addResource(new FileResource($this->getProjectDir() . '/config/bundles.php'));
         $container->setParameter('container.dumper.inline_class_loader', true);
-        $confDir = $this->getProjectDir().'/config';
+        $confDir = $this->getProjectDir() . '/config';
 
-        $loader->load($confDir.'/{packages}/*'.self::CONFIG_EXTS, 'glob');
-        $loader->load($confDir.'/{packages}/'.$this->environment.'/**/*'.self::CONFIG_EXTS, 'glob');
-        $loader->load($confDir.'/{services}'.self::CONFIG_EXTS, 'glob');
-        $loader->load($confDir.'/{services}_'.$this->environment.self::CONFIG_EXTS, 'glob');
+        $loader->load($confDir . '/{packages}/*' . self::CONFIG_EXTS, 'glob');
+        $loader->load($confDir . '/{packages}/' . $this->environment . '/**/*' . self::CONFIG_EXTS, 'glob');
+        $loader->load($confDir . '/{services}' . self::CONFIG_EXTS, 'glob');
+        $loader->load($confDir . '/{services}_' . $this->environment . self::CONFIG_EXTS, 'glob');
     }
 
     protected function getContainerBaseClass(): string
@@ -69,6 +69,6 @@ final class Kernel extends BaseKernel
 
     private function isTestEnvironment(): bool
     {
-        return 0 === strpos($this->getEnvironment(), 'test');
+        return str_starts_with($this->getEnvironment(), 'test');
     }
 }
