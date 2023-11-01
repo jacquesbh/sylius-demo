@@ -126,7 +126,7 @@ jobs:
             cancel-in-progress: true
 
         environment:
-            name: production
+            name: prod
             url: ${{ vars.PRODUCTION_URL }}
 
         env:

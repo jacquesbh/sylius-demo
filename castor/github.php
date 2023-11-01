@@ -49,7 +49,7 @@ function initGithubEnv(
     run('gh secret set -e ' . $environment . ' CLEVER_SECRET -b ' . ($secret) ?? io()->ask('CLEVER_SECRET?'));
 
     if (null !== $branch || null !== $url || true === $setupEnvs || io()->confirm('Would you like to setup the repository variables?', false)) {
-        initGithubVariables($branch, $url, $environment);
+        initGithubVariables($environment, $branch, $url);
     }
 }
 
