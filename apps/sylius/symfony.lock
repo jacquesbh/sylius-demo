@@ -296,6 +296,71 @@
     "monolog/monolog": {
         "version": "1.23.0"
     },
+    "monsieurbiz/sylius-cms-page-plugin": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/monsieurbiz/symfony-recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "e01b794cd3e5223081fb548c75114c1e77e07f34"
+        },
+        "files": [
+            "config/packages/monsieurbiz_sylius_cms_page_plugin.yaml",
+            "config/routes/monsieurbiz_sylius_cms_page_plugin.yaml"
+        ]
+    },
+    "monsieurbiz/sylius-contact-request-plugin": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/monsieurbiz/symfony-recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "415984b8ed967aef65e601450c2104e45146c801"
+        },
+        "files": [
+            "config/packages/monsieurbiz_sylius_contact_request_plugin.yaml",
+            "config/routes/monsieurbiz_sylius_contact_request_plugin.yaml"
+        ]
+    },
+    "monsieurbiz/sylius-menu-plugin": {
+        "version": "1.2",
+        "recipe": {
+            "repo": "github.com/monsieurbiz/symfony-recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "741fe9118819a1236c754ae935efecb47a9d42da"
+        },
+        "files": [
+            "config/packages/monsieurbiz_sylius_menu_plugin.yaml",
+            "config/routes/monsieurbiz_sylius_menu_plugin.yaml"
+        ]
+    },
+    "monsieurbiz/sylius-rich-editor-plugin": {
+        "version": "2.4",
+        "recipe": {
+            "repo": "github.com/monsieurbiz/symfony-recipes",
+            "branch": "master",
+            "version": "2.0",
+            "ref": "e4d7cf0fc492ff63d6f136eb0e5cead10452b088"
+        },
+        "files": [
+            "config/packages/monsieurbiz_sylius_rich_editor_plugin.yaml",
+            "config/routes/monsieurbiz_sylius_rich_editor_plugin.yaml"
+        ]
+    },
+    "monsieurbiz/sylius-settings-plugin": {
+        "version": "1.1",
+        "recipe": {
+            "repo": "github.com/monsieurbiz/symfony-recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "fafa903dedd49e881d21be1236c3d002e45278ed"
+        },
+        "files": [
+            "config/packages/monsieurbiz_settings_plugin.yaml",
+            "config/routes/monsieurbiz_settings_plugin.yaml"
+        ]
+    },
     "myclabs/deep-copy": {
         "version": "1.8.1"
     },

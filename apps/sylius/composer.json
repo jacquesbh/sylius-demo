@@ -6,6 +6,10 @@
     "require": {
         "php": "^8.2",
         "cweagans/composer-patches": "^1.7",
+        "monsieurbiz/sylius-cms-page-plugin": "^1.0",
+        "monsieurbiz/sylius-contact-request-plugin": "^1.0@RC",
+        "monsieurbiz/sylius-menu-plugin": "^1.2",
+        "monsieurbiz/sylius-settings-plugin": "^1.1",
         "sylius/paypal-plugin": "^1.5",
         "sylius/sylius": "^1.12.11",
         "symfony/dotenv": "^5.4 || ^6.0",
@@ -67,10 +71,7 @@
         "symfony": {
             "allow-contrib": "true",
             "require": "^6.0",
-            "endpoint": [
-                "https://api.github.com/repos/Sylius/SyliusRecipes/contents/index.json?ref=flex/main",
-                "flex://defaults"
-            ]
+            "endpoint": ["https://api.github.com/repos/Sylius/SyliusRecipes/contents/index.json?ref=flex/main", "https://api.github.com/repos/monsieurbiz/symfony-recipes/contents/index.json?ref=flex/master", "flex://defaults"]
         },
         "patches": {
             "szeidler/composer-patches-cli": {

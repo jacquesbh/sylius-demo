@@ -61,7 +61,9 @@ function installPlugins(): void
             run('symfony console doctrine:migrations:migrate -n', path: 'apps/sylius'); // Run app migrations
             io()->info('Run `monsieurbiz:search:populate` symfony command to populate ES and/or add this command in `clevercloud/functions.sh`');
         },
-        'monsieurbiz/sylius-settings-plugin' => function () {},
+        'monsieurbiz/sylius-settings-plugin' => function () {
+            run('symfony console doctrine:migrations:migrate -n', path: 'apps/sylius'); // Run plugin migrations
+        },
         'monsieurbiz/sylius-shipping-slot-plugin' => function () {
              // Update Entities - User operation
              io()->info('Implement the interface `\MonsieurBiz\SyliusShippingSlotPlugin\Entity\OrderInterface` in your Order entity.');
@@ -101,6 +103,8 @@ function installPlugins(): void
             while (!io()->confirm('Did you follow the installation guide?', false));
         },
     ];
+
+    ksort($plugins);
 
     $question = new ChoiceQuestion(
         'Please select the plugins you want to install',

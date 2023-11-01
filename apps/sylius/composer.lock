@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0d8858f550ee8a2dd9cbb18a421cb49",
+    "content-hash": "7358cae8eddea57a46d81a19f8479012",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -4664,6 +4664,427 @@
                 }
             ],
             "time": "2023-10-27T15:25:26+00:00"
+        },
+        {
+            "name": "monsieurbiz/sylius-cms-page-plugin",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monsieurbiz/SyliusCmsPagePlugin.git",
+                "reference": "9821223d2456af496a58371dd23574e273c67edf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monsieurbiz/SyliusCmsPagePlugin/zipball/9821223d2456af496a58371dd23574e273c67edf",
+                "reference": "9821223d2456af496a58371dd23574e273c67edf",
+                "shasum": ""
+            },
+            "require": {
+                "gedmo/doctrine-extensions": "^2.4.12 || ^3.0",
+                "monsieurbiz/sylius-rich-editor-plugin": "^2.2",
+                "php": "~7.4|~8.0",
+                "sylius/sylius": ">=1.8 <1.13"
+            },
+            "require-dev": {
+                "behat/behat": "^3.6.1",
+                "behat/mink-selenium2-driver": "^1.4",
+                "dmore/behat-chrome-extension": "^1.3",
+                "dmore/chrome-mink-driver": "^2.7",
+                "doctrine/data-fixtures": "^1.4",
+                "ergebnis/composer-normalize": "^2.5",
+                "friends-of-behat/mink": "^1.8",
+                "friends-of-behat/mink-browserkit-driver": "^1.4",
+                "friends-of-behat/mink-extension": "^2.4",
+                "friends-of-behat/page-object-extension": "^0.3",
+                "friends-of-behat/symfony-extension": "^2.1",
+                "friends-of-behat/variadic-extension": "^1.3",
+                "hwi/oauth-bundle": "^1.1",
+                "lchrusciel/api-test-case": "^5.0",
+                "matthiasnoback/symfony-config-test": "^4.2",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+                "mikey179/vfsstream": "^1.6",
+                "mockery/mockery": "^1.4",
+                "pamil/prophecy-common": "^0.1",
+                "phpmd/phpmd": "@stable",
+                "phpspec/phpspec": "^6.1|^7.2",
+                "phpstan/phpstan": "^0.12.57",
+                "phpstan/phpstan-doctrine": "^0.12.19",
+                "phpstan/phpstan-webmozart-assert": "^0.12.7",
+                "phpunit/phpunit": "^8.5",
+                "psalm/plugin-mockery": "^0.3",
+                "psr/event-dispatcher": "^1.0",
+                "sylius-labs/coding-standard": "^3.1",
+                "symfony/browser-kit": "^4.4",
+                "symfony/debug-bundle": "^4.4",
+                "symfony/dotenv": "^4.4",
+                "symfony/flex": "^1.7",
+                "symfony/web-profiler-bundle": "^4.4"
+            },
+            "type": "sylius-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MonsieurBiz\\SyliusCmsPagePlugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This plugins allows you to add manage CMS pages using the Rich Editor",
+            "keywords": [
+                "monsieurbiz",
+                "sylius",
+                "sylius-plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/monsieurbiz/SyliusCmsPagePlugin/issues",
+                "source": "https://github.com/monsieurbiz/SyliusCmsPagePlugin/tree/v1.0.0"
+            },
+            "time": "2023-09-08T10:11:20+00:00"
+        },
+        {
+            "name": "monsieurbiz/sylius-contact-request-plugin",
+            "version": "v1.0.0-RC.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monsieurbiz/SyliusContactRequestPlugin.git",
+                "reference": "c2e7972a16968e691e2bd9713a8aaa703644a834"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monsieurbiz/SyliusContactRequestPlugin/zipball/c2e7972a16968e691e2bd9713a8aaa703644a834",
+                "reference": "c2e7972a16968e691e2bd9713a8aaa703644a834",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "sylius/sylius": ">=1.11 <1.13"
+            },
+            "require-dev": {
+                "behat/behat": "^3.6.1",
+                "behat/mink-selenium2-driver": "^1.4",
+                "dmore/behat-chrome-extension": "^1.3",
+                "dmore/chrome-mink-driver": "^2.7",
+                "friends-of-behat/mink": "^1.8",
+                "friends-of-behat/mink-browserkit-driver": "^1.4",
+                "friends-of-behat/mink-debug-extension": "^2.0.0",
+                "friends-of-behat/mink-extension": "^2.4",
+                "friends-of-behat/page-object-extension": "^0.3",
+                "friends-of-behat/suite-settings-extension": "^1.0",
+                "friends-of-behat/symfony-extension": "^2.1",
+                "friends-of-behat/variadic-extension": "^1.3",
+                "friendsofphp/php-cs-fixer": "^3.16",
+                "phpmd/phpmd": "^2.13",
+                "phpspec/phpspec": "^7.2",
+                "phpstan/phpstan": "^1.8.1",
+                "phpstan/phpstan-doctrine": "1.3.37",
+                "phpstan/phpstan-strict-rules": "^1.3.0",
+                "phpstan/phpstan-webmozart-assert": "^1.2.0",
+                "phpunit/phpunit": "^9.5",
+                "polishsymfonycommunity/symfony-mocker-container": "^1.0",
+                "sylius-labs/coding-standard": "^4.2",
+                "symfony/browser-kit": "^5.4 || ^6.0",
+                "symfony/debug-bundle": "^5.4 || ^6.0",
+                "symfony/dotenv": "^5.4 || ^6.0",
+                "symfony/flex": "^2.2.2",
+                "symfony/intl": "^5.4 || ^6.0",
+                "symfony/web-profiler-bundle": "^5.4 || ^6.0"
+            },
+            "type": "sylius-plugin",
+            "extra": {
+                "symfony": {
+                    "docker": false,
+                    "endpoint": [
+                        "https://api.github.com/repos/monsieurbiz/symfony-recipes/contents/index.json?ref=flex/master",
+                        "flex://defaults"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MonsieurBiz\\SyliusContactRequestPlugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Add a contact request plugin to your Sylius.",
+            "keywords": [
+                "monsieurbiz",
+                "sylius",
+                "sylius-plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/monsieurbiz/SyliusContactRequestPlugin/issues",
+                "source": "https://github.com/monsieurbiz/SyliusContactRequestPlugin/tree/v1.0.0-RC.4"
+            },
+            "time": "2023-08-09T08:28:20+00:00"
+        },
+        {
+            "name": "monsieurbiz/sylius-menu-plugin",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monsieurbiz/SyliusMenuPlugin.git",
+                "reference": "e18f2ce100d330621dc798c5f9830496ff519cf5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monsieurbiz/SyliusMenuPlugin/zipball/e18f2ce100d330621dc798c5f9830496ff519cf5",
+                "reference": "e18f2ce100d330621dc798c5f9830496ff519cf5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.4|~8.0",
+                "sylius/sylius": ">=1.8 <1.13"
+            },
+            "require-dev": {
+                "behat/behat": "^3.6.1",
+                "behat/mink-selenium2-driver": "^1.4",
+                "dmore/behat-chrome-extension": "^1.3",
+                "dmore/chrome-mink-driver": "^2.7",
+                "doctrine/data-fixtures": "^1.4",
+                "ergebnis/composer-normalize": "^2.5",
+                "friends-of-behat/mink": "^1.8",
+                "friends-of-behat/mink-browserkit-driver": "^1.4",
+                "friends-of-behat/mink-extension": "^2.4",
+                "friends-of-behat/page-object-extension": "^0.3",
+                "friends-of-behat/symfony-extension": "^2.1",
+                "friends-of-behat/variadic-extension": "^1.3",
+                "hwi/oauth-bundle": "^1.1",
+                "lchrusciel/api-test-case": "^5.0",
+                "matthiasnoback/symfony-config-test": "^4.2",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+                "mikey179/vfsstream": "^1.6",
+                "mockery/mockery": "^1.4",
+                "pamil/prophecy-common": "^0.1",
+                "phpmd/phpmd": "@stable",
+                "phpspec/phpspec": "^6.1 || ^7.2",
+                "phpstan/phpstan": "^0.12.57",
+                "phpstan/phpstan-doctrine": "^0.12.19",
+                "phpstan/phpstan-webmozart-assert": "^0.12.7",
+                "phpunit/phpunit": "^8.5",
+                "psalm/plugin-mockery": "^0.3",
+                "psr/event-dispatcher": "^1.0",
+                "sylius-labs/coding-standard": "^3.1",
+                "symfony/browser-kit": "^4.4",
+                "symfony/debug-bundle": "^4.4",
+                "symfony/dotenv": "^4.4",
+                "symfony/flex": "^1.7",
+                "symfony/web-profiler-bundle": "^4.4"
+            },
+            "type": "sylius-plugin",
+            "extra": {
+                "symfony": {
+                    "require": "^4.4"
+                },
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MonsieurBiz\\SyliusMenuPlugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This plugins allows you to manage menus.",
+            "keywords": [
+                "monsieurbiz",
+                "sylius",
+                "sylius-plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/monsieurbiz/SyliusMenuPlugin/issues",
+                "source": "https://github.com/monsieurbiz/SyliusMenuPlugin/tree/v1.2.0"
+            },
+            "time": "2023-10-30T12:44:40+00:00"
+        },
+        {
+            "name": "monsieurbiz/sylius-rich-editor-plugin",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monsieurbiz/SyliusRichEditorPlugin.git",
+                "reference": "c22fa1d1da5c7bebf8f3014c290f2a41d27c57c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monsieurbiz/SyliusRichEditorPlugin/zipball/c22fa1d1da5c7bebf8f3014c290f2a41d27c57c3",
+                "reference": "c22fa1d1da5c7bebf8f3014c290f2a41d27c57c3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*",
+                "ext-json": "*",
+                "php": "~7.4|~8.0|~8.1",
+                "sylius/sylius": ">=1.8 <1.13"
+            },
+            "require-dev": {
+                "behat/behat": "^3.6.1",
+                "behat/mink-selenium2-driver": "^1.4",
+                "dmore/behat-chrome-extension": "^1.3",
+                "dmore/chrome-mink-driver": "^2.7",
+                "doctrine/data-fixtures": "^1.4",
+                "ergebnis/composer-normalize": "^2.5",
+                "friends-of-behat/mink": "^1.8",
+                "friends-of-behat/mink-browserkit-driver": "^1.4",
+                "friends-of-behat/mink-extension": "^2.4",
+                "friends-of-behat/page-object-extension": "^0.3",
+                "friends-of-behat/symfony-extension": "^2.1",
+                "friends-of-behat/variadic-extension": "^1.3",
+                "hwi/oauth-bundle": "^1.1",
+                "lchrusciel/api-test-case": "^5.0",
+                "matthiasnoback/symfony-config-test": "^4.2",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+                "mikey179/vfsstream": "^1.6",
+                "mockery/mockery": "^1.4",
+                "pamil/prophecy-common": "^0.1",
+                "phpmd/phpmd": "@stable",
+                "phpspec/phpspec": "^6.1|^7.2",
+                "phpstan/phpstan": "^0.12.57",
+                "phpstan/phpstan-doctrine": "^0.12.19",
+                "phpstan/phpstan-webmozart-assert": "^0.12.7",
+                "phpunit/phpunit": "^8.5",
+                "psalm/plugin-mockery": "^0.3",
+                "psr/event-dispatcher": "^1.0",
+                "sylius-labs/coding-standard": "^3.1",
+                "symfony/browser-kit": "^4.4",
+                "symfony/debug-bundle": "^4.4",
+                "symfony/dotenv": "^4.4",
+                "symfony/flex": "^1.7",
+                "symfony/web-profiler-bundle": "^4.4"
+            },
+            "type": "sylius-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                },
+                "symfony": {
+                    "docker": false,
+                    "endpoint": [
+                        "https://api.github.com/repos/monsieurbiz/symfony-recipes/contents/index.json?ref=flex/master",
+                        "flex://defaults"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MonsieurBiz\\SyliusRichEditorPlugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Rich Editor plugin for Sylius.",
+            "keywords": [
+                "monsieurbiz",
+                "sylius",
+                "sylius-plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/monsieurbiz/SyliusRichEditorPlugin/issues",
+                "source": "https://github.com/monsieurbiz/SyliusRichEditorPlugin/tree/v2.4.0"
+            },
+            "time": "2023-09-05T16:46:19+00:00"
+        },
+        {
+            "name": "monsieurbiz/sylius-settings-plugin",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monsieurbiz/SyliusSettingsPlugin.git",
+                "reference": "556a9751db1930fc8e32dad90c638bbf3d433dbd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monsieurbiz/SyliusSettingsPlugin/zipball/556a9751db1930fc8e32dad90c638bbf3d433dbd",
+                "reference": "556a9751db1930fc8e32dad90c638bbf3d433dbd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^8.0",
+                "sylius/sylius": ">=1.10 <1.13",
+                "symfony/cache": "^5.4.28 || ^6.0"
+            },
+            "require-dev": {
+                "behat/behat": "^3.6.1",
+                "behat/mink-selenium2-driver": "^1.4",
+                "dmore/behat-chrome-extension": "^1.3",
+                "dmore/chrome-mink-driver": "^2.7",
+                "doctrine/data-fixtures": "^1.4",
+                "ergebnis/composer-normalize": "^2.5",
+                "friends-of-behat/mink": "^1.8",
+                "friends-of-behat/mink-browserkit-driver": "^1.4",
+                "friends-of-behat/mink-extension": "^2.4",
+                "friends-of-behat/page-object-extension": "^0.3",
+                "friends-of-behat/symfony-extension": "^2.1",
+                "friends-of-behat/variadic-extension": "^1.3",
+                "friendsofphp/php-cs-fixer": "@stable",
+                "hwi/oauth-bundle": "^1.1",
+                "lchrusciel/api-test-case": "^5.0",
+                "matthiasnoback/symfony-config-test": "^4.2",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+                "mikey179/vfsstream": "^1.6",
+                "mockery/mockery": "@stable",
+                "pamil/prophecy-common": "@stable",
+                "phpmd/phpmd": "@stable",
+                "phpspec/phpspec": "@stable",
+                "phpstan/phpstan": "@stable",
+                "phpstan/phpstan-doctrine": "@stable",
+                "phpstan/phpstan-webmozart-assert": "@stable",
+                "psalm/plugin-mockery": "@stable",
+                "psr/event-dispatcher": "@stable",
+                "symfony/browser-kit": "@stable",
+                "symfony/debug-bundle": "@stable",
+                "symfony/dotenv": "@stable",
+                "symfony/flex": "@stable",
+                "symfony/web-profiler-bundle": "@stable"
+            },
+            "type": "sylius-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "symfony": {
+                    "allow-contrib": "true"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MonsieurBiz\\SyliusSettingsPlugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Add a settings panel to your Sylius.",
+            "keywords": [
+                "monsieurbiz",
+                "sylius",
+                "sylius-plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/monsieurbiz/SyliusSettingsPlugin/issues",
+                "source": "https://github.com/monsieurbiz/SyliusSettingsPlugin/tree/v1.1.1"
+            },
+            "time": "2023-10-09T15:49:00+00:00"
         },
         {
             "name": "namshi/jose",
@@ -18243,7 +18664,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "monsieurbiz/sylius-contact-request-plugin": 5
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
