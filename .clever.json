@@ -1,10 +1,10 @@
 {
   "apps": [
     {
-      "app_id": "app_2a2554f6-8457-4c45-808b-58fcfbcf5e61",
+      "app_id": "app_d4832c00-9fd9-4d71-9f00-074ed8c5c195",
       "org_id": "user_d658f30b-96a8-45b3-bcfd-720f246516e7",
-      "deploy_url": "https://push-n3-par-clevercloud-customers.services.clever-cloud.com/app_2a2554f6-8457-4c45-808b-58fcfbcf5e61.git",
-      "name": "demo-prod",
+      "deploy_url": "https://push-n3-par-clevercloud-customers.services.clever-cloud.com/app_d4832c00-9fd9-4d71-9f00-074ed8c5c195.git",
+      "name": "sylius-prod",
       "alias": "prod"
     }
   ]
